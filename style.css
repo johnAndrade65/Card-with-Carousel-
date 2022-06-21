@@ -86,8 +86,7 @@ body{
     background: #0088d2;
 }
 #tenis-1,
-#tenis-2,
-#tenis-3{
+#tenis-2{
     width: 450px;
     position: absolute;
     transition: 1s;
@@ -98,7 +97,4 @@ body{
 }
 #tenis-2{
     left: -650px;
-}
-#tenis-3{
-    left: -1300px;
 }
