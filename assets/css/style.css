@@ -91,6 +91,7 @@ body{
 }
 .card-bottom p{
     text-align: left;
+    line-height: 20px;
 }
 /*==BUTTON==*/
 .btn{
