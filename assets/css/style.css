@@ -1,13 +1,21 @@
+/*==FONT IMPORT==*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*==GENERAL STYLIZATION==*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/*==BODY==*/
 body{
     background: #f1f1f1;
+    width: 100vw;
 }
+
+/*==CONTAINER==*/
 .container{
     width: 600px;
     height: 100vh;
@@ -17,18 +25,35 @@ body{
     margin: auto;
     overflow: hidden;
 }
+
+/*==CARD==*/
 .card{
-    position: relative;
     width: 350px;
-    height: 600px;
+    height: 700px;
+    position: relative;
     background: #fff;
     border-radius: 30px;
-    box-shadow: 0 0 15px 0 rgb(163,163,163);
+    box-shadow: 0 0 15px rgb(156, 156, 156);
+    transform: scale(85%);
 }
-.card-itens{
+.card-items{
     width: 100%;
     height: 100%;
 }
+/*==IMAGES==*/
+#sneakers-1, #sneakers-2{
+    width: 450px;
+    position: absolute;
+    top: 190px;
+    transition: 1s;
+}
+#sneakers-1{
+    left: -50px;
+}
+#sneakers-2{
+    left: -650px;
+}
+/*==CONTAINER BLUE==*/
 .card-top{
     width: 100%;
     height: 60%;
@@ -36,22 +61,23 @@ body{
     border-radius: 30px;
     color: #fff;
 }
+/*==BUTTONS LEFT AND RIGHT==*/
 .icons{
     display: flex;
     justify-content: space-between;
 }
 .icons span{
-    font-size: 30px;
     cursor: pointer;
     padding: 1em;
 }
+/*==TEXTS==*/
 .card-top h3{
-    padding-left: 1.5em;
     font-size: 20px;
+    padding-left: 1.5em;
 }
 .card-top h1{
-    padding-left: 1em;
     font-size: 30px;
+    padding-left: 1em;
     font-weight: 600;
 }
 .card-bottom{
@@ -60,41 +86,29 @@ body{
     flex-direction: column;
 }
 .card-bottom h3{
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
-.card-bottom p {
+.card-bottom p{
     text-align: left;
 }
-.card-bottom a{
+/*==BUTTON==*/
+.btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     padding: 10px;
+    width: 100%;
     border: 2px solid #0088d2;
     margin-top: 15px;
     border-radius: 10px;
-    text-decoration: none;
-    color: #0088d2;
     font-size: 16px;
+    color: #0088d2;
+    text-decoration: none;
     transition: all 0.5s;
 }
-.card-bottom a:hover{
+.btn:hover{
     border: 2px solid #0088d2;
-    color: #fff;
     background: #0088d2;
-}
-#tenis-1,
-#tenis-2{
-    width: 450px;
-    position: absolute;
-    transition: 1s;
-    top: 190px;
-}
-#tenis-1{
-    left: -50px;
-}
-#tenis-2{
-    left: -650px;
+    color: #fff;
 }
